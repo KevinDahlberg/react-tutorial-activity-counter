@@ -6,13 +6,19 @@ export const CodingDayCount = React.createClass({
     return (
       <div className="coding-day-count">
         <div className="total-days">
-          <span>5 days</span>
+          <span>{this.props.total}</span>
+          <span>days</span>
         </div>
         <div className="home-days">
-          <span>2 days</span>
+          <span>{this.props.home}</span>
+          <span>days</span>
         </div>
         <div className="out-days">
-          <span>3 days</span>
+          <span>{this.props.out}</span>
+          <span>days</span>
+        </div>
+        <div>
+          <span>{this.props.goal}</span>
         </div>
       </div>
     )
